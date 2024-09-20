@@ -12,7 +12,7 @@ export const Category = () => {
                                 <div>
                                     <p className='mb-4'>Enjoy</p>
                                     <p>With</p>
-                                    <p>Earphone</p>
+                                    <p>Earphone 1212</p>
                                    <Button text="Browse" bgColor="bg-primary" textColor="text-white"/>
                                 </div>
                             </div>
