@@ -11,7 +11,7 @@ export const Category = () => {
                             <div>
                                 <div>
                                     <p className='mb-4'>Enjoy</p>
-                                    <p>With</p>
+                                    <p>Gunal Products</p>
                                     <p>Earphone</p>
                                    <Button text="Browse" bgColor="bg-primary" textColor="text-white"/>
                                 </div>
