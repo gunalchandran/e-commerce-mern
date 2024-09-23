@@ -4,6 +4,7 @@ import Hero from './components/Navabar/Hero/Hero.jsx'
 import { Category } from './components/category/Category.jsx'
 import { Category2 } from './components/category/Category2.jsx'
 import Services from './components/services/Services.jsx'
+import Banner from './components/Banner/Banner.jsx'
 const App = () => {
   return (
     <div className='bg-white dark:bg-white'>
@@ -12,6 +13,7 @@ const App = () => {
       <Category/>
       <Category2/>
       <Services/>
+      <Banner/>
     </div>
   )
 }
