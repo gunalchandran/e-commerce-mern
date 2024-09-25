@@ -39,7 +39,7 @@ export const Category2 = () => {
                                     <p className='mb-4'>Enjoy</p>
                                     <p className='mb-[2px] text-gray-400 '>with</p>
                                     <p className='text-4xl xl:text-5xl font-bold opacity-100 mb-4'>Earphone</p>
-                                   <Button text="Browse" bgColor="bg-white" textColor="text-primary"/>
+                                   <Button text="Browse" bgColor="bg-primary" textColor="text-white"/>
                                 </div>
                             </div>
                             <img src={Image1} alt="earphone" className='w-[210px] absolute bottom-0 -right-1' />

@@ -110,9 +110,9 @@ export const Navbar = () => {
               <input
                 type="text"
                 placeholder='Search'
-                className='search-bar border border-gray-300 dark:border-gray-700 rounded-full py-2 px-4 pl-10 outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200'
+                className='search-bar border border-white dark:border-gray-700 rounded-full py-2 px-4 pl-10 outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200'
               />
-              <IoMdSearch className='text-xl text-gray-600 group-hover:text-primary transition duration-200 dark:text-gray-400 absolute top-1/2 transform -translate-y-1/2 left-3' />
+              <IoMdSearch className='text-xl text-gray-600 group-hover:text-primary transition duration-200 dark:text-g-400 absolute top-1/2 transform -translate-y-1/2 left-3' />
             </div>
 
             {/* Cart button */}

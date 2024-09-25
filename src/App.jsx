@@ -8,7 +8,7 @@ import Banner from './components/Banner/Banner.jsx'
 import Product from './components/Product/Product.jsx'
 const App = () => {
   return (
-    <div className='bg-white dark:bg-white'>
+    <div className='bg-white dark:bg-black'>
       <Navbar/>
       <Hero/>
       <Category/>
