@@ -81,7 +81,7 @@ const Product = () => {
 
             <div>
               {productsData.map((data,index)=>(
-                <div>
+                <div key={index}>
                   <img src={data.img} alt="" />
                 </div>
               ))}

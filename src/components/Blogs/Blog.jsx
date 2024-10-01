@@ -32,14 +32,12 @@ const Blog = () => {
             {/* Body section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7 dark:text-white">
                 {/* blog card */}{
-                BlogData.map((data)=>(
-                    <div>
-                        <div>
-                          {/* image section */}
+                BlogData.map((data,index)=>(
+                    <div key={index}>
+                        <div >
                           <div>
                             <img src={data.img} alt="" className='w-[320px] h-[320px]'/>
                           </div>
-                          {/* content section */}
                           <div className='text-xs text-gray-350 '>
                             <p className='font-bold line-clamp-1'>{data.published}</p>
                             <p className='space-y-1 '>{data.title}</p>
