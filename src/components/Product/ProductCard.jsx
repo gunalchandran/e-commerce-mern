@@ -6,8 +6,8 @@ const ProductCard = ({ data }) => {
     <div className='mb-10 dark:text-white'>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-center gap-6'>
         {/* Card Section*/}
-        {data.map((item) => (
-          <div className='group' key={item.id}>
+        {data.map((item,index) => (
+          <div className='group' key={index}>
             <div className='relative'>
               <img
                 src={item.img}

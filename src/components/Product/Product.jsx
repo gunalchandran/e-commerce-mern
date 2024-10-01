@@ -74,10 +74,10 @@ const Product = () => {
   return (
     <div>
         <div className='container dark:text-white'>
-            Header Section
+            {/* Header Section */}
             <Headering title="Our Products" subtitle={"Explore our Products"}/>
             <ProductCard data={productsData}/>
-            <h1>Hello</h1>
+            {/* <h1>Hello</h1> */}
         </div>
     </div>
   )
