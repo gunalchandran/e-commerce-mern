@@ -5,7 +5,7 @@ import Img1 from '../../assets/Headphone1.jpg'
 import Img2 from'../../assets/Headphone.png' 
 import Img3 from'../../assets/watch.png' 
 import Img4 from'../../assets/speaker.png' 
-import Img5 from'../../assets/gaming.png' 
+import Img5 from'../../assets/Headphone3.jpeg' 
 
 const productsData=[
 
