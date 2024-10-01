@@ -7,7 +7,7 @@ const ProductCard = ({ data }) => {
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-center gap-6'>
         {/* Card Section*/}
         {data.map((item) => (
-          <div className='group relative' key={item.id}>
+          <div className='group' key={item.id}>
             <div className='relative'>
               <img
                 src={item.img}
@@ -15,7 +15,7 @@ const ProductCard = ({ data }) => {
                 className='h-[140px] w-[240px] object-cover rounded-md'
               />
               {/* Hover button */}
-              <div className='absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 group-hover:backdrop-blur-sm transition-opacity duration-300'>
+              <div className='hidden group-hover:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-full w-full text-center group-hover:backdrop:blur-sm justify-center items-center duration-200 '>
                 <Button
                   text={'Add to cart'}
                   bgColor={'bg-primary'}
