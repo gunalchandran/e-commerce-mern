@@ -80,6 +80,7 @@ const Product = () => {
             <Headering title="Our Products" subtitle={"Explore our Products"}/>
             {/*Body Section*/}
             <ProductCard data={productsData}/>
+            <h1>Hello</h1>
         </div>
     </div>
   )
