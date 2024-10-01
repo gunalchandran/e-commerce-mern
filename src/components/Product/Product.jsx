@@ -1,9 +1,7 @@
 import React from 'react'
 import Headering from '../shared/Headering.jsx'
 import ProductCard from'../Product/ProductCard.jsx'
-//import Images
-
-import Img1 from'../../assets/Headphone.png' 
+import Img1 from '../../assets/Headphone1.jpg'
 import Img2 from'../../assets/Headphone.png' 
 import Img3 from'../../assets/watch.png' 
 import Img4 from'../../assets/speaker.png' 
@@ -76,11 +74,18 @@ const Product = () => {
   return (
     <div>
         <div className='container dark:text-white'>
-            {/*Header Section*/}
+            {/* Header Section
             <Headering title="Our Products" subtitle={"Explore our Products"}/>
-            {/*Body Section*/}
             <ProductCard data={productsData}/>
-            <h1>Hello</h1>
+            <h1>Hello</h1> */}
+
+            <div>
+              {productsData.map((data,index)=>(
+                <div>
+                  <img src={data.img} alt="" />
+                </div>
+              ))}
+            </div>
         </div>
     </div>
   )
