@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IoMdSearch } from 'react-icons/io';
-import { FaCaretDown, FaCartShopping,} from "react-icons/fa6";
+import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import DarkMode from '../Navabar/DarkMode';
 
@@ -113,16 +113,16 @@ export const Navbar = () => {
               {isOpen ? <FaXmark /> : <FaBars />}
             </button>
           </div>
-
+          
           {/* Right Side - Search bar and Cart */}
           <div className='flex items-center gap-4'>
             <div className='relative group hidden sm:block'>
               <input
                 type="text"
                 placeholder='Search'
-                className='search-bar border border-white dark:border-gray-700 rounded-full py-2 px-4 pl-10 outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200'
+                className='search-bar border border-gray-300 dark:border-gray-700 rounded-full py-2 px-4 pl-10 outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200'
               />
-              <IoMdSearch className='text-xl text-gray-600 group-hover:text-primary transition duration-200 dark:text-g-400 absolute top-1/2 transform -translate-y-1/2 left-3' />
+              <IoMdSearch className='text-xl text-gray-600 group-hover:text-primary transition duration-200 dark:text-gray-400 absolute top-1/2 transform -translate-y-1/2 left-3' />
             </div>
 
             <button className='relative p-3'>
@@ -141,7 +141,7 @@ export const Navbar = () => {
         {isOpen && (
           <div className='lg:hidden bg-white dark:bg-gray-900 dark:text-white p-4'>
             <ul className='space-y-4'>
-              {MenuLinks.map((link,index) => (
+              {MenuLinks.map((link, index) => (
                 <li key={index}>
                   <a href={link.link} className='block text-gray-500 hover:text-black dark:hover:text-white'>
                     {link.name}
@@ -149,12 +149,12 @@ export const Navbar = () => {
                 </li>
               ))}
               <li>
-                <a href="#" className='block text-gray-500 hover:text-black dark:hover:text-white'>
+                <a href="#" className='sm:hidden block text-gray-500 hover:text-black dark:hover:text-white'>
                   Quick Links
                 </a>
-                <ul className='ml-4 mt-2 space-y-2'>
-                  {DropdownLinks.map((data) => (
-                    <li key={data.id}>
+                <ul className='ml-4 mt-2 space-y-5'>
+                  {DropdownLinks.map((data, index) => (
+                    <li key={index}>
                       <a href={data.link} className='block text-gray-500 hover:text-black dark:hover:text-white'>
                         {data.name}
                       </a>
